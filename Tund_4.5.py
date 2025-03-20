@@ -69,8 +69,11 @@ else:
         lastdigit = checksum % 11
         if lastdigit >= 10:
             lastdigit = 0
-    
+    arvud = []
+    idkoodid = []
     if lastdigit != int(idkood[10]):
         print("Viga! ID kood ei ole korrektne.")
+        arvud.append(idkood)
     else:
         print("ID kood on korrektne.")
+        idkoodid.append(idkood)
